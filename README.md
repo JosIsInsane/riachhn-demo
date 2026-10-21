@@ -8,4 +8,4 @@ Sitio estático demo para [@riachhn](https://www.instagram.com/riachhn/).
 
 Precios y aromas son ilustrativos. Sin build: abrir `index.html` o servir con `python3 -m http.server`.
 
-Para cambiar productos editar `js/products.js`. Para el WhatsApp real, cambiar `WA` en `js/app.js`.
+Para cambiar productos editar `js/products.js`. WhatsApp: +504 9878-1417 (`WA` en `js/app.js`).

@@ -1,6 +1,6 @@
 (() => {
   const P = window.RIACH_PRODUCTS, CATS = window.RIACH_CATS, MOODS = window.RIACH_MOODS;
-  const WA = "50400000000"; // número demo
+  const WA = "50498781417";
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const money = n => "L " + n.toLocaleString("es-HN");
