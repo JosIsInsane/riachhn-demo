@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo · Ri'ach</title>
+  <meta name="description" content="Velas de soya, difusores y wax melts hechos a mano en Honduras. Aromaterapia artesanal Ri'ach.">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav solid">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Ri'ach inicio"><span class="brand-mark">RI'ACH</span><span class="brand-name">RI'ACH</span></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="index.html#historia">Historia</a>
+      <a href="index.html#tienda">Tienda</a>
+      <a href="index.html#coleccion">Colección</a>
+      <a href="catalogo.html" aria-current="page">Catálogo</a>
+      <a href="index.html#faq">Preguntas</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-cart aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" hidden>0</span>
+      </button>
+      <button class="icon-btn burger" aria-label="Menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Móvil">
+  <a href="index.html#historia">Historia</a><a href="index.html#tienda">Tienda</a><a href="index.html#coleccion">Colección</a><a href="catalogo.html">Catálogo</a><a href="index.html#faq">Preguntas</a>
+</nav>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Inicio</a> / Catálogo</p>
+      <h1>El <em>catálogo</em></h1>
+      <p class="lead">Velas, difusores, wax melts y sets de regalo. Todo vertido a mano en Honduras.</p>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="chips" id="cat-chips" aria-label="Categoría"></div>
+      <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="Buscar aroma o nota…" aria-label="Buscar"></label>
+      <select id="sort" class="select" aria-label="Ordenar">
+        <option value="featured">Destacados</option>
+        <option value="asc">Precio: menor a mayor</option>
+        <option value="desc">Precio: mayor a menor</option>
+        <option value="az">Nombre A–Z</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="wrap" style="padding-bottom:110px">
+    <div class="subbar">
+      <div class="chips" id="mood-chips" aria-label="Momento"></div>
+      <span id="result-count" aria-live="polite"></span>
+    </div>
+    <div class="grid" id="catalog-grid"></div>
+
+    <div class="perks">
+      <div class="perk"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><div><strong>Envío a todo Honduras</strong><span>Gratis desde L 1,200</span></div></div>
+      <div class="perk"><svg viewBox="0 0 24 24"><path d="M4 10h16v10H4zM12 10v10M3 7h18v3H3zM12 7c-2-4-6-3-5 0M12 7c2-4 6-3 5 0"/></svg><div><strong>Empaque de regalo</strong><span>Caja kraft + tarjeta</span></div></div>
+      <div class="perk"><svg viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1 1 9 19.5L4 20Z"/></svg><div><strong>Pedidos por WhatsApp</strong><span>Respuesta el mismo día</span></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="index.html" class="brand"><span class="brand-mark">RI'ACH</span><span class="brand-name">RI'ACH</span></a>
+        <p>Aromaterapia artesanal hecha a mano en Honduras.</p>
+        <form class="newsletter" onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('button').textContent='¡Listo!'">
+          <input type="email" placeholder="Tu correo" aria-label="Correo" required><button>Suscribirme</button>
+        </form>
+      </div>
+      <div><h4>Tienda</h4><ul><li><a href="catalogo.html?cat=velas">Velas</a></li><li><a href="catalogo.html?cat=difusores">Difusores</a></li><li><a href="catalogo.html?cat=melts">Wax melts</a></li><li><a href="catalogo.html?cat=sets">Sets de regalo</a></li></ul></div>
+      <div><h4>Ayuda</h4><ul><li><a href="index.html#faq">Envíos</a></li><li><a href="index.html#faq">Cuidado de velas</a></li><li><a href="index.html#faq">Eventos</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li><a href="https://www.instagram.com/riachhn/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://wa.me/50400000000" target="_blank" rel="noopener">WhatsApp</a></li><li>Honduras</li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Ri'ach · Aromaterapia Artesanal</span><span>Sitio demo — precios ilustrativos</span></div>
+  </div>
+</footer>
+
+<!-- Carrito -->
+<div class="scrim" data-close></div>
+<aside class="drawer" aria-label="Carrito">
+  <div class="drawer-head"><h3>Tu carrito</h3><button class="icon-btn" data-close aria-label="Cerrar carrito"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="ship"><span id="ship-msg"></span><div class="ship-track" id="ship-bar"><i></i></div></div>
+  <ul id="cart-items"></ul>
+  <div class="drawer-foot">
+    <div class="total"><span>Total</span><span id="cart-total">L 0</span></div>
+    <button class="btn btn-primary" id="checkout">Pedir por WhatsApp</button>
+    <small>Confirmamos disponibilidad y forma de pago por chat.</small>
+  </div>
+</aside>
+
+<dialog id="modal"><button class="close" data-close aria-label="Cerrar">×</button><div class="modal-inner"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
